@@ -12,7 +12,7 @@
 		}
 
 
-## Unnamed Prepeared Query
+## Unnamed Prepared Query
 
 		rows, err := db.Query("SELECT length($1) AS foo", "hello")
 		if err != nil {
@@ -38,8 +38,8 @@
 ## Notifications
 
 Notifications can't be accessed via the exp/sql package. You will need to use
-pq.OpenRaw to obtain a single connection for listenting.  NOTE: It is recommend
-to only use this connection for reading notifiactions and to use the exp/sql
+pq.OpenRaw to obtain a single connection for listening.  NOTE: It is recommend
+to only use this connection for reading notifications and to use the exp/sql
 API for all other operations. This may change in the future.
 
 **Example**
